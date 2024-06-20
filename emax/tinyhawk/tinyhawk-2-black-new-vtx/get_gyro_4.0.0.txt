@@ -1,0 +1,100 @@
+# 
+
+# get gyro
+gyro_hardware_lpf = NORMAL
+Allowed values: NORMAL, 1KHZ_SAMPLING, EXPERIMENTAL
+
+gyro_sync_denom = 1
+Allowed range: 1 - 32
+
+gyro_lowpass_type = PT1 
+Allowed values: PT1, BIQUAD
+
+gyro_lowpass_hz = 150
+Allowed range: 0 - 16000
+
+gyro_lowpass2_type = PT1
+Allowed values: PT1, BIQUAD
+
+gyro_lowpass2_hz = 0
+Allowed range: 0 - 16000
+
+gyro_notch1_hz = 0
+Allowed range: 0 - 16000
+
+gyro_notch1_cutoff = 0
+Allowed range: 0 - 16000
+
+gyro_notch2_hz = 0
+Allowed range: 0 - 16000
+
+gyro_notch2_cutoff = 0
+Allowed range: 0 - 16000
+
+gyro_calib_duration = 125
+Allowed range: 50 - 3000
+
+gyro_calib_noise_limit = 48
+Allowed range: 0 - 200
+
+gyro_offset_yaw = 0
+Allowed range: -1000 - 1000
+
+gyro_overflow_detect = ALL
+Allowed values: OFF, YAW, ALL
+
+gyro_to_use = FIRST
+Allowed values: FIRST, SECOND, BOTH
+
+dyn_lpf_gyro_min_hz = 150
+Allowed range: 0 - 1000
+
+dyn_lpf_gyro_max_hz = 450
+Allowed range: 0 - 1000
+
+gyro_filter_debug_axis = ROLL
+Allowed values: ROLL, PITCH, YAW
+
+gyro_cal_on_first_arm = OFF
+Allowed values: OFF, ON
+
+gyro_1_bustype = SPI
+Allowed values: NONE, I2C, SPI, SLAVE
+
+gyro_1_spibus = 1
+Allowed range: 0 - 3
+
+gyro_1_i2cBus = 0
+Allowed range: 0 - 3
+
+gyro_1_i2c_address = 0
+Allowed range: 0 - 119
+
+gyro_1_sensor_align = CW180
+Allowed values: DEFAULT, CW0, CW90, CW180, CW270, CW0FLIP, CW90FLIP, CW180FLIP, CW270FLIP
+
+gyro_2_bustype = SPI
+Allowed values: NONE, I2C, SPI, SLAVE
+
+gyro_2_spibus = 1
+Allowed range: 0 - 3
+
+gyro_2_i2cBus = 0
+Allowed range: 0 - 3
+
+gyro_2_i2c_address = 0
+Allowed range: 0 - 119
+
+gyro_2_sensor_align = DEFAULT
+Allowed values: DEFAULT, CW0, CW90, CW180, CW270, CW0FLIP, CW90FLIP, CW180FLIP, CW270FLIP
+
+gyro_rpm_notch_harmonics = 3
+Allowed range: 0 - 3
+
+gyro_rpm_notch_q = 500
+Allowed range: 1 - 3000
+
+gyro_rpm_notch_min = 100
+Allowed range: 50 - 200
+
+# 
